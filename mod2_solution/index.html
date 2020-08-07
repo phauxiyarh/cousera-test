@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1{
+            margin-bottom: 15px;
+        }
+        h3{
+            margin: 2px;
+            justify-content: center;
+
+        }
+        #p1{
+            background-color: aqua;
+            width:300px;
+            height: 300px;
+        }
+        #p2{
+            background-color: rgb(108, 25, 216);
+            width:300px;
+            height: 300px;
+        }
+        .row{
+            width: 100%;
+           
+            margin: auto;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-flow: wrap;
+            align-content: center;
+        }
+
+        .break {
+            flex-basis: 100%;
+            height: 0;
+        }
+        /**LARGE*/
+        @media(min-width: 991px) {
+            #p1{
+                width:49%
+            }
+            #p2{
+                width: 49%;
+                /**height: 150px;*/
+            }
+            .col-lg-1,.col-lg-2,.col-lg-3{
+                float: left;
+                border: 1px solid rgba(19, 1, 1, 0.849);
+                margin: 5px;
+                background-color: rgb(204, 204, 204);
+            }
+            .col-lg-1{
+                width: 30%;
+            }
+            .col-lg-2{
+                width: 45%;
+            }
+            .col-lg-3{
+                width: 90%;
+
+            }
+        }
+        /**MEDIUM*/
+        @media(min-width: 768px) and (max-width: 991px){
+            #p1{
+                width:49%
+            }
+            #p2{
+                width: 49%;
+                /**height: 100px;*/
+            }
+            .col-md-1,.col-md-2,.col-md-3{
+                float: left;
+                border: 1px solid rgba(19, 1, 1, 0.849);
+                margin: 5px;
+                background-color: rgb(204, 204, 204);
+                
+            }
+            .col-md-1{
+                width: 30%;
+            }
+            .col-md-2{
+                width: 45%;
+            }
+            .col-md-3{
+                width: 90%;
+
+            }
+        }
+        /**SMALL*/
+        @media(max-width: 767px) {
+            #p1{
+                width:49%
+            }
+            #p2{
+                width: 49%;
+                /*height: 50px;*/
+            }
+            .col-sm-1,.col-sm-2,.col-sm-3{
+                float: left;
+                border: 1px solid rgba(19, 1, 1, 0.849);
+                margin: 5px;
+                background-color: rgb(204, 204, 204);
+            }
+            .col-sm-1{
+                width: 30%;
+            }
+            .col-sm-2{
+                width: 45%;
+            }
+            .col-sm-3{
+                width: 90%;
+
+            }
+        }
+      .title{
+          width: 90px;
+          position: top;
+          float:right;
+          background-color: rgb(49, 199, 49);
+          display: block;
+          border-left: 2px solid black;
+          border-bottom:2px solid black; 
+         
+      }
+      .title1{
+          width: 90px;
+          position: top;
+          float:right;
+          background-color: rgb(62, 170, 233);
+          display: block;
+          border-left: 2px solid black;
+          border-bottom:2px solid black; 
+      }
+      .title2{
+          width: 90px;
+          position: top;
+          float:right;
+          background-color: red;
+          display: block;
+          border-left: 2px solid black;
+          border-bottom:2px solid black; 
+         
+         
+      }
+
+    </style>
+   
+    <title>Document</title>
+</head>
+<body> 
+    
+    <div class = "row">
+
+        <h1>Our Menu</h1> 
+        <div class="break"></div>
+      
+        <div class="col-lg-1 col-md-2 col-sm-3"><div class="title"><h3>Chicken </h3></div>
+        </br> 
+        </br> 
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam facilis unde qui maxime vero dolorum. Nam, alias voluptas qui cum eaque laborum repellendus! Deleniti vitae autem mollitia veniam et quia.
+        </div>
+
+        <div class="col-lg-1 col-md-2 col-sm-3"><div class="title1"><h3>Beef </h3></div>
+        </br>
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque et, hic ratione corrupti aliquam minus, maxime magnam delectus porro non dolorem dolores temporibus mollitia laborum, harum provident! Eum, culpa minus.
+        </div>
+
+        <div class="col-lg-1 col-md-2 col-sm-3"><div class="title2"><h3>Sushi </h3></div>
+        </br>
+        </br>   
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, fuga quia? Qui harum veniam obcaecati consectetur earum, deserunt aliquam expedita quidem. Ratione laboriosam totam temporibus inventore dolore iusto voluptatem reprehenderit.
+        </div>
+        
+       
+
+    </div>
+    
+</body>
+</html>
